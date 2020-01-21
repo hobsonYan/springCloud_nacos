@@ -47,18 +47,18 @@ public class OrderController {
         return null;
     }
 
-    @RequestMapping(value = "/getAge")
-    @ResponseBody
-    public String getAge(Integer age) {
-//        String url = "http://user-service/user/setAge";
-//        Map<String, Object> map = new HashMap<>();
-//        map.put("age", age);
-//        ResponseEntity<String> data = restTemplate.postForEntity(url, map, String.class);
-//        String data = restTemplate.postForObject(url, map, String.class);
-        String data = restTemplate.postForObject("http://user-service/user/setAge", age, String.class);
-        System.out.println(data);
-        return data;
-    }
+//     @RequestMapping(value = "/getAge")
+//     @ResponseBody
+//     public String getAge(Integer age) {
+// //        String url = "http://user-service/user/setAge";
+// //        Map<String, Object> map = new HashMap<>();
+// //        map.put("age", age);
+// //        ResponseEntity<String> data = restTemplate.postForEntity(url, map, String.class);
+// //        String data = restTemplate.postForObject(url, map, String.class);
+//         String data = restTemplate.postForObject("http://user-service/user/setAge", age, String.class);
+//         System.out.println(data);
+//         return data;
+//     }
 
     @RequestMapping(value = "/setAge")
     @ResponseBody
